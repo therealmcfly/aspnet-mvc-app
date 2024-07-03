@@ -93,7 +93,8 @@ namespace aspnet_mvc_app.Controllers
 
 				if (result.Succeeded)
 				{
-					await _signInManager.SignInAsync(user, isPersistent: false);
+					// uncomment the code below if you want to automatically sign in the user after registration
+					// await _signInManager.SignInAsync(user, isPersistent: false);
 					return RedirectToAction("Index", "Home");
 				}
 

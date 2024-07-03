@@ -13,5 +13,7 @@ namespace aspnet_mvc_app.Models
 		public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 		public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 		public Boolean? Activated { get; set; }
+		// set to true if you want the user to be activated immediately after registration
+		// set to null if you want the admin to activate the user before they can login
 	}
 }
